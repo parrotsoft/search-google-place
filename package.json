@@ -1,0 +1,21 @@
+{
+  "name": "search-google-place",
+  "version": "1.0.0",
+  "description": "Module google place",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Miguel Lopez Ariza",
+  "license": "MIT",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/parrotsoft/search-google-place.git"
+  }
+}

@@ -1,5 +1,4 @@
-const express = require('express');
-const fetch = require("node-fetch");
+const httpClient = require('./http-client');
 
 class Place {
 
@@ -8,7 +7,7 @@ class Place {
     }
 
     getPlace(place) {
-        return fetch('https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input='+encodeURI(place)+'&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key='+this.token);
+        return httpClient.get('https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input='+encodeURI(place)+'&inputtype=textquery&fields=photos,formatted_address,name,rating,opening_hours,geometry&key='+this.token);
     }
 }
 

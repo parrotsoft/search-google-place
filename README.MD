@@ -1,8 +1,5 @@
-**
 
 ## Search Google Place
-
-**
 
 **About**
 This is a node module, to return place of google with your token.
@@ -16,7 +13,6 @@ This is a node module, to return place of google with your token.
     const Place = require('search-google-place');
     const placeQuery = new Place('your token');
     placeQuery.getPlace('Suan atlantico')
-       .then(res => res.json())
        .then(json => console.log(json));
 
 **License**
